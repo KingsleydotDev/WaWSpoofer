@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/0PV/2kKfFZYqOBwWMVbDWmvYi09nGpemv79xVhldoBVloezbYzAVLbDMLdHFJnlCw4ljolEuGHBhkPQL2Syaw==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\WaWSpoofer\\WaWSpoofer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\memory.dll.x86\\1.2.23\\memory.dll.x86.1.2.23.nupkg.sha512"
+  ],
+  "logs": []
+}

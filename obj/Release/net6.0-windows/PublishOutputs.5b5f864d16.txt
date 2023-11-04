@@ -1,0 +1,6 @@
+D:\Github\WaWSpoofer\bin\Release\net6.0-windows\app.publish\WaWSpoofer.exe
+D:\Github\WaWSpoofer\bin\Release\net6.0-windows\app.publish\WaWSpoofer.dll
+D:\Github\WaWSpoofer\bin\Release\net6.0-windows\app.publish\WaWSpoofer.deps.json
+D:\Github\WaWSpoofer\bin\Release\net6.0-windows\app.publish\WaWSpoofer.runtimeconfig.json
+D:\Github\WaWSpoofer\bin\Release\net6.0-windows\app.publish\WaWSpoofer.pdb
+D:\Github\WaWSpoofer\bin\Release\net6.0-windows\app.publish\Memory.dll

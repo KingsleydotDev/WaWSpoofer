@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Memory.dll.x86/1.2.26": {
+        "runtime": {
+          "lib/netstandard2.1/Memory.dll": {
+            "assemblyVersion": "1.2.26.0",
+            "fileVersion": "1.2.26.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Memory.dll.x86/1.2.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bFb/hNlxEU+mSwRRRX1Ysy6QSLna7FrwF1ktKcOzP1psGgioWYEGEBSj/VX6j/kEO72FvjM/l6d6B9MVjiaX+Q==",
+      "path": "memory.dll.x86/1.2.26",
+      "hashPath": "memory.dll.x86.1.2.26.nupkg.sha512"
+    }
+  }
+}
