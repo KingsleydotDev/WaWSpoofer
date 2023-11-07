@@ -45,12 +45,14 @@
             button4 = new Button();
             label5 = new Label();
             label6 = new Label();
+            dvarToggle = new CheckBox();
+            dvarTimer = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // gameStatusLabel
             // 
             gameStatusLabel.AutoSize = true;
-            gameStatusLabel.Location = new Point(95, 128);
+            gameStatusLabel.Location = new Point(87, 161);
             gameStatusLabel.Name = "gameStatusLabel";
             gameStatusLabel.Size = new Size(61, 15);
             gameStatusLabel.TabIndex = 0;
@@ -175,7 +177,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(24, 128);
+            label5.Location = new Point(16, 161);
             label5.Name = "label5";
             label5.Size = new Size(73, 15);
             label5.TabIndex = 12;
@@ -184,17 +186,33 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(239, 113);
+            label6.Location = new Point(231, 146);
             label6.Name = "label6";
             label6.Size = new Size(115, 30);
             label6.TabIndex = 13;
             label6.Text = "By Seppuku404,\r\nThanks to @GRIIMtB";
             // 
+            // dvarToggle
+            // 
+            dvarToggle.AutoSize = true;
+            dvarToggle.Location = new Point(239, 112);
+            dvarToggle.Name = "dvarToggle";
+            dvarToggle.Size = new Size(92, 19);
+            dvarToggle.TabIndex = 14;
+            dvarToggle.Text = "UnlockDvars";
+            dvarToggle.UseVisualStyleBackColor = true;
+            dvarToggle.CheckedChanged += dvarToggle_CheckedChanged;
+            // 
+            // dvarTimer
+            // 
+            dvarTimer.Tick += dvarTimer_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(358, 152);
+            ClientSize = new Size(358, 185);
+            Controls.Add(dvarToggle);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(button4);
@@ -237,5 +255,7 @@
         private Button button4;
         private Label label5;
         private Label label6;
+        private CheckBox dvarToggle;
+        private System.Windows.Forms.Timer dvarTimer;
     }
 }

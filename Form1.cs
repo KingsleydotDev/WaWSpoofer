@@ -50,6 +50,7 @@ namespace WaWSpoofer
             }
         }
 
+
         public static string RandomString(int length) => new string(Enumerable.Repeat<string>("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", length).Select<string, char>((Func<string, char>)(s => s[Form1.random.Next(s.Length)])).ToArray<char>());
 
         public static string RandomString2(int length) => new string(Enumerable.Repeat<string>("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", length).Select<string, char>((Func<string, char>)(s => s[Form1.random.Next(s.Length)])).ToArray<char>());
@@ -113,5 +114,24 @@ namespace WaWSpoofer
             textBox2.Text = Form1.RandomString2(15);
         }
 
+        private void dvarToggle_CheckedChanged(object sender, EventArgs e)
+        {
+            if (dvarToggle.Checked)
+            {
+                dvarTimer.Start();
+            }
+            else
+            {
+                dvarTimer.Stop();
+                m.WriteMemory("0x0F3F3F80", "int", "0");
+                m.WriteMemory("0x0F3F3F90", "int", "0");
+            }
+        }
+
+        private void dvarTimer_Tick(object sender, EventArgs e)
+        {
+            m.WriteMemory("0x0F3F3F80", "int", "1");
+            m.WriteMemory("0x0F3F3F90", "int", "1");
+        }
     }
 }
